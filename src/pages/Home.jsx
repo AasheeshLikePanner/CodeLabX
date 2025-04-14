@@ -11,7 +11,7 @@ export default function Home() {
     const { leftPanelRef, resizerRef, leftPanelWidth, isDragging } = useResizable();
 
     return (
-        <div className="h-screen flex flex-col bg-gray-50 text-neutral-700">
+        <div className="h-screen w-full flex flex-col bg-gray-50 text-neutral-700">
           <AppHeader 
             language={language} 
             onLanguageChange={setLanguage} 
@@ -20,7 +20,7 @@ export default function Home() {
           <div className="flex-1 flex overflow-hidden">
             <div 
               ref={leftPanelRef}
-              className="flex flex-col border-r border-neutral-200 min-w-[350px]"
+              className="flex flex-col border-r border-neutral-200 min-w-1/2"
               style={{ width: leftPanelWidth }}
             >
               <LeftPanel 

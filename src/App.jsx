@@ -1,5 +1,5 @@
 import React from 'react'
-import MonacoEditor from './components/MonacoEditor'
+import MonacoEditor from './components/Editor'
 import Home from './pages/Home'
 
 export default function App() {
